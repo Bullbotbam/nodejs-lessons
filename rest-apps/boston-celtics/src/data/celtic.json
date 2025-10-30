@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Jayson Tatum",
+    "jersey": 0,
+    "ppg": 26.9,
+    "yearsInNBA": 7
+  },
+  {
+    "name": "Jaylen Brown",
+    "jersey": 7,
+    "ppg": 23.0,
+    "yearsInNBA": 8
+  },
+  {
+    "name": "Jrue Holiday",
+    "jersey": 4,
+    "ppg": 14.2,
+    "yearsInNBA": 15
+  },
+  {
+    "name": "Kristaps Porzingis",
+    "jersey": 8,
+    "ppg": 20.1,
+    "yearsInNBA": 9
+  },
+  {
+    "name": "Derrick White",
+    "jersey": 9,
+    "ppg": 15.2,
+    "yearsInNBA": 7
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Jayson Tatum",
+    "jersey": 0,
+    "ppg": 26.9,
+    "yearsInNBA": 7,
+    "position": "Forward",
+    "image": "/images/tatum.jpg"
+  },
+  {
+    "name": "Jaylen Brown",
+    "jersey": 7,
+    "ppg": 23.0,
+    "yearsInNBA": 8,
+    "position": "Guard",
+    "image": "/images/brown.jpeg"
+  },
+  {
+    "name": "Jrue Holiday",
+    "jersey": 4,
+    "ppg": 14.2,
+    "yearsInNBA": 15,
+    "position": "Guard",
+    "image": "/images/holiday.jpg"
+  },
+  {
+    "name": "Kristaps Porzingis",
+    "jersey": 8,
+    "ppg": 20.1,
+    "yearsInNBA": 9,
+    "position": "Center",
+    "image": "/images/porzingis.jpg"
+  },
+  {
+    "name": "Derrick White",
+    "jersey": 9,
+    "ppg": 15.2,
+    "yearsInNBA": 7,
+    "position": "Guard",
+    "image": "/images/dwhite.jpg"
+  }
+]

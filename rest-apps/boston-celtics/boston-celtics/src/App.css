@@ -1,0 +1,148 @@
+/* Overall Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0eab51, #043f23);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+.page-title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 30px 0 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff33;
+  padding-bottom: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.player-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  max-height: 500px;
+  object-fit: cover;
+}
+/* Flip Card Container */
+.card {
+  perspective: 1000px;
+  width: 250px;
+  height: 350px;
+}
+
+/* Flip Inner (flipping mechanism) */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* center cards horizontally */
+  padding: 20px;
+}
+
+/* Card front and back */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-front {
+  background: linear-gradient(135deg, #0eab51, #064f2b);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front img {
+  width: 90%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-back {
+  background: #ffffff;
+  color: #000;
+  transform: rotateY(180deg);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.card-back h2 {
+  margin: 0 0 10px 0;
+}
+
+.card-back p {
+  margin: 4px 0;
+}
+
+
+.controls {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #0eab51;
+}
+
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
