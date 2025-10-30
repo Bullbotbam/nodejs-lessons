@@ -1,0 +1,15 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/subscribers/645d577c921a086ec4397f83
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "The First of Many",
+    "subscribedToChannel": "My Big Ole Blog"
+
+}
