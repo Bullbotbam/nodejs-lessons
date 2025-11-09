@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Jayson Tatum",
+    "jersey": 0,
+    "ppg": 26.9,
+    "yearsInNBA": 6,
+    "position": "Forward",
+    "likes": 1520,
+    "averageMinutesPlayed": 35.7
+  },
+  {
+    "name": "Jaylen Brown",
+    "jersey": 7,
+    "ppg": 24.5,
+    "yearsInNBA": 7,
+    "position": "Guard",
+    "likes": 1324,
+    "averageMinutesPlayed": 33.2
+  },
+  {
+    "name": "Al Horford",
+    "jersey": 42,
+    "ppg": 7.6,
+    "yearsInNBA": 17,
+    "position": "Center",
+    "likes": 890,
+    "averageMinutesPlayed": 28.4
+  },
+  {
+    "name": "Derrick White",
+    "jersey": 9,
+    "ppg": 15.2,
+    "yearsInNBA": 7,
+    "position": "Guard",
+    "likes": 1115,
+    "averageMinutesPlayed": 31.5
+  },
+  {
+    "name": "Kristaps Porzingis",
+    "jersey": 8,
+    "ppg": 20.1,
+    "yearsInNBA": 8,
+    "position": "Center",
+    "likes": 980,
+    "averageMinutesPlayed": 30.9
+  }
+]
