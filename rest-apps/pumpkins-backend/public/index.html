@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumpkin Management App</title>
+    <style>
+        /* Styling for forms and buttons */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        form {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input, select {
+            margin: 5px 0;
+            padding: 8px;
+            width: 200px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #responseMessage {
+            margin-top: 10px;
+            color: #155724;
+            font-weight: bold;
+        }
+        .pumpkin-list {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pumpkin Management App</h1>
+
+    <!-- Form to Add a New Pumpkin -->
+    <h2>Add a Pumpkin</h2>
+    <form id="pumpkinForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="color">Color:</label>
+        <select id="color" name="color" required>
+            <option value="orange">Orange</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+        <label for="price">Price ($):</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+
+        <button type="submit">Add Pumpkin</button>
+    </form>
+
+    <div id="responseMessage"></div>
+
+    <!-- Form to Update a Pumpkin -->
+    <h2>Update a Pumpkin</h2>
+    <form id="updateForm">
+        <label for="updateId">Pumpkin ID:</label>
+        <input type="text" id="updateId" required>
+
+        <label for="updateName">New Name:</label>
+        <input type="text" id="updateName">
+
+        <label for="updateWeight">New Weight (kg):</label>
+        <input type="number" id="updateWeight">
+
+        <label for="updateColor">New Color:</label>
+        <select id="updateColor">
+            <option value="">Select a new color (optional)</option>
+            <option value="orange">Orange</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+        <label for="updatePrice">New Price ($):</label>
+        <input type="number" id="updatePrice" step="0.01">
+
+        <button type="submit">Update Pumpkin</button>
+    </form>
+
+    <!-- Section to View All Pumpkins -->
+    <h2>All Pumpkins</h2>
+    <div class="pumpkin-list" id="pumpkinList"></div>
+
+    <!-- Form to Delete a Pumpkin -->
+    <h2>Delete a Pumpkin</h2>
+    <form id="deleteForm">
+        <label for="deleteId">Pumpkin ID:</label>
+        <input type="text" id="deleteId" required>
+        <button type="submit">Delete Pumpkin</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
